@@ -24,7 +24,7 @@ class Editor {
     }
 
     toggleStyle(attribute, value) {
-        if (this.range.getLength() == 0) {
+        if (this.range.getRange() && this.range.getLength() == 0) {
             this.removeStyle(attribute);
         } else {
             this.applyStyle(attribute, value);
