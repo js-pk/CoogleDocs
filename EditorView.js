@@ -14,7 +14,6 @@ class EditorView {
     bindEventListeners() {
         this.editorView.addEventListener("keyup", (event) => this.highlightButtons());
         this.editorView.addEventListener("click", () => this.highlightButtons());
-
         this.editorView.addEventListener("keydown", (event) => this.editor.addTab(event));
         this.boldButton.addEventListener("click", () => this.editor.toggleStyle("font-weight", "bold"));
         this.italicButton.addEventListener("click", () => this.editor.toggleStyle("font-style", "italic"));
