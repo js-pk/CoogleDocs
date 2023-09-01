@@ -1,6 +1,5 @@
 class Editor {
-    constructor(name) {
-        this.name = name;
+    constructor() {
         this.document = [];
         this.range = new Range();
     }

@@ -1,6 +1,7 @@
 class EditorView {
-    constructor() {
-        this.editor = new Editor("CoogleDocs");
+    constructor(name) {
+        this.name = name;
+        this.editor = new Editor();
 
         this.editorView = document.getElementById("editor");
         this.boldButton = document.getElementById("bold-button");
@@ -52,4 +53,4 @@ class EditorView {
 
 }
 
-const editorView = new EditorView();
+const editorView = new EditorView("Coogle Docs");
