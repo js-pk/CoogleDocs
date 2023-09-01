@@ -17,11 +17,6 @@ class Range {
         return(range.commonAncestorContainer.parentNode);
     }
 
-    getCurrentNode() {
-        const range = this.getRange();
-        console.log(range);
-    }
-
     addNode(node) {
         const range = this.getRange();
         range.insertNode(node);
