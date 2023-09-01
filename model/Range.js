@@ -12,9 +12,14 @@ class Range {
         return range.startOffset - range.endOffset;
     }
 
-    getCurrentNode() {
+    getParentNode() {
         const range = this.getRange();
         return(range.commonAncestorContainer.parentNode);
+    }
+
+    getCurrentNode() {
+        const range = this.getRange();
+        console.log(range);
     }
 
     addNode(node) {
