@@ -41,7 +41,3 @@ class Editor {
         parentNode.style[attribute] = "";
     }
 }
-
-
-// save and load
-// history
